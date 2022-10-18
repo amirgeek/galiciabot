@@ -3,7 +3,7 @@ const axios = require("axios");
 let lastIndexMovement = 0;
 
 const TELEGRAM_BOTID = "";
-const TELEGRAM_CHATID = ";
+const TELEGRAM_CHATID = "";
 
 class Telegram {
     sendTelegramMessage(message) {
@@ -16,7 +16,7 @@ class Telegram {
 
         try {
             const telegramMsg = encodeURIComponent(message);
-            const url = `https://api.telegram.org/${botId}/sendMessage?chat_id=${chatId}&text=${telegramMsg}&parse_mode=HTML`;
+            const url = `https://api.telegram.org/${GaliciaMovBot}/sendMessage?chat_id=${862021528}&text=${telegramMsg}&parse_mode=HTML`;
             axios.get(url);
         } catch (e) {
             console.log(e);
